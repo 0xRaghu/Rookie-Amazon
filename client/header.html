@@ -1,0 +1,20 @@
+<template name="header">
+<div class="navbar-fixed">
+  <nav>
+  <div class="nav-wrapper black">
+    <a href="/" class="hide-on-small-only"><img src="https://res.cloudinary.com/celebraton/image/upload/v1520577007/logo-header-white_knblic.png" height="70px" alt="CelebratON-logo"></a>
+    <a href="/" class="hide-on-med-and-up">Home</a>
+    <ul id="nav-mobile" class="right">
+      <li><a class="waves-effect waves-light btn" id="incrementCart">Increment</a></li>
+      <li>{{>loginButtons}}</li>
+      <li><a href="/cart"><i class="material-icons left">shopping_cart</i>({{bringbackcart}})</a></li>
+      {{#if currentUser}}
+      <li><span class="logout" href="./"><a>Logout</a></span></li>
+      {{else}}
+      <li>Signed In</li>
+      {{/if}}
+</ul>
+  </div>
+</nav>
+</div>
+</template>

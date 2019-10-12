@@ -1,0 +1,12 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "mongodb://xxxxxxxx:xxxxxxxx@xxxxxxxx.mlab.com:59696/demoApp"
+     }
+   },
+   "public": {
+     "analyticsSettings": {
+       "Google Analytics" : {"trackingId": "UA-xxxxxxxxx-1"}
+     }
+   }
+}
